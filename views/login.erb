@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in to continue</title>
+  </head>
+  <body>
+    <div>
+      <% if @message %>
+        <div><%= @message %></div>
+      <% end %>
+      <form action="/login" method="POST">
+        <h2>Please sign in</h2>
+        <input type="text" name="username" value="username" placeholder="username" required autofocus>
+        <input type="password" name="password" value="password" placeholder="password" required> 
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+  </body>
+</html>

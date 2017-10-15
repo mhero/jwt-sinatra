@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JWT Sinatra</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <p>Logged in as user <%= @user_id %></p>
+        <a href="/logout"> Logout </a>
+        <p>Welcome.  Your have a valid token:</p>
+        <p><%= @token %></p>
+        <p> Your token will expire at: </p>
+        <p><%= @exp.strftime("%m/%d/%y %H:%M:%S %P") %></p>
+      </div>
+    </div>
+  </body>
+</html>
