@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'jwt'
+gem 'sinatra', "~> 2.0.1"
+gem 'jwt', "~> 2.1.0"

@@ -28,7 +28,7 @@ helpers do
     def authorized?
         @token = extract_token
         begin
-            payload, header = JWT.decode(@token, settings.verify_key, true)
+            payload, header = JWT.decode @token, settings.verify_key, true, { algorithm: "RS256" }
             
             @exp = header["exp"]
 
@@ -46,8 +46,9 @@ helpers do
 
             @user_id = payload["user_id"]
 
-            rescue JWT::DecodeError => e
-                return false
+        rescue JWT::DecodeError => ex
+            puts "An error of type #{ex.class} happened, message is #{ex.message}"
+            return false
         end
     end
 end
