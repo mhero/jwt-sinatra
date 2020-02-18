@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    jwt (2.1.0)
+    jwt (2.2.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     rack (2.2.2)
@@ -19,7 +19,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jwt (~> 2.1.0)
+  jwt (~> 2.2.1)
   sinatra (~> 2.0.2)
 
 BUNDLED WITH
