@@ -20,7 +20,7 @@ PLATFORMS
 
 DEPENDENCIES
   jwt (~> 2.2.1)
-  sinatra (~> 2.0.8)
+  sinatra (~> 2.0.8, >= 2.0.8.1)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
